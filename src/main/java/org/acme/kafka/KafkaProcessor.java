@@ -26,7 +26,7 @@ public class KafkaProcessor {
         // Manipulasi data
         event.action = "processed_" + event.action;
 
-        // Simpan ke DB
+        // save
         UserEventEntity entity = new UserEventEntity();
         entity.userId = event.userId;
         entity.action = event.action;
